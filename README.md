@@ -1,5 +1,12 @@
 🍕 Pizza Shop Simulation (C + pthreads)
 
+** Description
+
+- Implemented a pizzeria simulation in C where each customer/order runs as a separate thread (pthreads) and competes for shared resources (phone lines, cooks, ovens, deliverers). 
+- Designed synchronization mechanisms using mutexes and condition variables for safe resource allocation and thread coordination. 
+- Simulated stochastic service times (order, preparation, baking, delivery) and collected system statistics (successful/failed orders, mean/max service and cooling times). 
+- Identified critical concurrency issues (race conditions, out-of-bounds indexing, division by zero) and proposed fixes to improve correctness and scalability. 
+
 A multithreaded C program that simulates a pizza shop workflow using POSIX threads (pthreads).
 Each thread represents a customer placing an order and competing for limited shop resources (phone lines, cooks, ovens, and delivery staff). The program measures and prints basic performance statistics (service time, cooling/delivery time, successful/failed orders).
 
